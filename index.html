@@ -11,29 +11,69 @@
 
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 20px;
-      background-color: #f5f5f5;
+      background-color: #eef2ec;
       color: #333;
     }
 
-    h1 {
-      color: #2f5d3f;
+    .hero {
+      background-image: url('img/casareggio-vista.png');
+
+      background-size: cover;
+      background-position: center;
+
+      height: 350px;
+
+      border-radius: 12px;
+
+      color: white;
+
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: 48px;
+      margin-bottom: 10px;
+
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      font-size: 22px;
+
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     }
 
     .intro {
       background: white;
-      padding: 15px;
-      border-radius: 8px;
+      padding: 20px;
+      border-radius: 12px;
       margin-bottom: 30px;
+
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     .sentiero {
       background: white;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
+
+      padding: 20px;
+
+      margin-bottom: 20px;
+
+      border-radius: 12px;
+
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     .sentiero h2 {
@@ -43,26 +83,39 @@
 
     .button {
       display: inline-block;
+
       margin-top: 10px;
-      padding: 8px 12px;
+
+      padding: 10px 16px;
+
       background-color: #2f5d3f;
+
       color: white;
+
       text-decoration: none;
-      border-radius: 5px;
+
+      border-radius: 6px;
+
+      transition: 0.2s;
     }
 
     .button:hover {
-      background-color: #3d7a53;
+      background-color: #467357;
     }
 
   </style>
+
 </head>
 
 <body>
 
-  <h1>Sentieri di Casareggio</h1>
+  <div class="hero">
+    <h1>Sentieri di Casareggio</h1>
+    <p>Valbrevenna • Parco dell’Antola</p>
+  </div>
 
   <div class="intro">
+
     <p>
       Benvenuti nella rete sentieristica di Casareggio (Valbrevenna).
     </p>
@@ -71,9 +124,11 @@
       In questa pagina trovate i percorsi disponibili,
       le mappe e i file GPX/KMZ scaricabili.
     </p>
+
   </div>
 
   <div class="sentiero">
+
     <h2>C1 — Casareggio-Mulini-Tonno</h2>
 
     <p>
@@ -83,9 +138,11 @@
     <a class="button" href="c1.html">
       Apri scheda sentiero
     </a>
+
   </div>
 
   <div class="sentiero">
+
     <h2>C2 — Casareggio-Tessaie</h2>
 
     <p>
@@ -95,31 +152,39 @@
     <a class="button" href="c2.html">
       Apri scheda sentiero
     </a>
+
   </div>
 
   <div class="sentiero">
+
     <h2>C3 — Casareggio-Pareto-Tessaie</h2>
 
     <p>
-      Percorso ad anello tra castagneti, borgate storiche, villaggion fantasma e ampi panorami sulla valle.
+      Percorso ad anello tra castagneti, borgate storiche,
+      villaggio fantasma e ampi panorami sulla valle.
     </p>
 
     <a class="button" href="c3.html">
       Apri scheda sentiero
     </a>
+
   </div>
 
   <div class="sentiero">
+
     <h2>C4 — Casareggio-Monte Buio</h2>
 
     <p>
-      Salita escursionistica verso i crinali del Monte Buio con ampie vedute sull’Appennino.
+      Salita escursionistica verso i crinali del Monte Buio
+      con ampie vedute sull’Appennino.
     </p>
 
     <a class="button" href="c4.html">
       Apri scheda sentiero
     </a>
+
   </div>
 
 </body>
+
 </html>
